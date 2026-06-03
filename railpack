@@ -1,0 +1,13 @@
+{
+  "message": "  \u001b[1;31m✖ Railpack could not determine how to build the app.\u001b[0m",
+  "timestamp": "2026-06-03T03:30:38.754230577Z",
+  "severity": "info",
+  "tags": {
+    "serviceId": "dc3f6d85-96e2-4445-88ee-9343e95ac8a6",
+    "deploymentId": "33477de2-0680-4139-b2af-2e466c299fee",
+    "deploymentInstanceId": null
+  },
+  "attributes": {
+    "level": "info"
+  }
+}
