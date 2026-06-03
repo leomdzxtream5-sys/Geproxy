@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Redireciona tudo para index se não for arquivo real
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Bloqueia acesso a arquivos sensíveis
+<FilesMatch "\.(env|sql|log|bak|old|~)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Protege diretórios
+Options -Indexes
